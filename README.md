@@ -4,65 +4,40 @@
 ## Description
 In this project, I'll work with a dataset with 21,000 properties for sale in Mexico to determine whether sale prices are influenced more by property size or location.
 
-
 **Table of contents**
-- [About the Project](#about-the-project)
+- [About the Project](#description)
 - [Language](#language)
 - [Library](#library)
-- [Getting started](#getting-started)
 - [Rum Project](#rum-project)
 - [References](#references)
 - [Author](#author)
+- [License](#license)
 
 ## Language
 - Python  3.9.12
-- SQL
 
 ## Library
-- Faker   18.7.0
-- Pandas  2.0.1
-- Sqlite  
-
-## Getting started
-- [Import the library](#import-the-library)
-- [Building the database](#building-the-database)
-- [Create the tables](#create-the-tables)
-- [Normalize the database](#normalize-the-database)
-- [Check the database](#check-the-database)
-
-### Import the library
-```python
-from faker import Faker
-import pandas as pd
-import sqlite3
-
-# create a instance of the faker class and set a seed to have the same behaviour
-fake = Faker()
-fake.seed_instance(121)
-```
-### Building the database
-```python
-# set a cursor to the database
-# whether the database doesn't exist sqlite create it.
-conn = sqlite3.connect('db_test.db')
-cursor = conn.cursor()
-``` 
+- Pandas          2.2.1
+- Matplotlib      3.8.3
+- Plotly-express  0.4.1
 
 ## Rum Project
 ```bash
 # Clone the reposotiry 
-git clone https://github.com/IgorTraspadini/Sintectical_SQL_database.git
+git clone https://github.com/IgorTraspadini/Housing-in-Mexico.git
 
 # Import
 requirements.txt
 
-# Run the project
-python sintectical_db.py
+# Run
+Housing_in_Mexico_Import_Clean_Data.ipynb
+Housing_in_Mexico_EDA_Conclusion.ipynb
 ```
 
 ## References 
-- [Faker Documentation](https://faker.readthedocs.io/en/master/)
-- [Database normalization](https://en.wikipedia.org/wiki/Database_normalization)
+- [Pandas](https://pandas.pydata.org/)
+- [Plotly](https://plotly.com/python/)
+- [Matplotlib](https://matplotlib.org/)
 
 ## Author
 [Igor Traspadini](https://www.linkedin.com/in/igor-chieppe-traspadini/?locale=en_US)
